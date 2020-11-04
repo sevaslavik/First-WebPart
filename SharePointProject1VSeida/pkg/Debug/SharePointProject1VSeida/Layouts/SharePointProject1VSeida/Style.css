@@ -1,0 +1,17 @@
+﻿body
+{
+    background-color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input {
+    width: 60%;
+    padding: 1em;
+    font-size: 1em;
+    border: none;
+    border-radius: 15px;
+}
+
+.grid {
+    text-align: center;
+}

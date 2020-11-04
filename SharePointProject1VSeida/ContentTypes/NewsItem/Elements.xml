@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100021171D40AB54C9992FF8D6B837B93A7" Name="NewsItem" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{bc91a437-52e7-49e1-8c4e-4698904b2b6d}" DisplayName="$Resources:core,Title;" Name="LinkTitleNoMenu" ReadOnly="TRUE" />
+      <FieldRef ID="{146a181d-4399-4866-be63-3e63544f53e4}" DisplayName="Description News" Required="FALSE" Name="DescriptionNews" />
+      <FieldRef ID="{5735b3db-1219-412d-bb0c-3d3f0ea4c32d}" DisplayName="Publishing Date" Required="FALSE" Name="PublishingDate" />
+      <FieldRef ID="{2d3a5a83-cab6-4c23-8810-8f2a8442fe9d}" DisplayName="Person Assigned" Required="FALSE" Name="PersonAssigned" />
+      <FieldRef ID="{0dead026-7c88-4185-ad33-60821ebe77ce}" DisplayName="Visible" Required="FALSE" Name="Visible" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

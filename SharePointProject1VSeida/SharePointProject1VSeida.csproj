@@ -1,0 +1,135 @@
+﻿<Project ToolsVersion="16.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B116AC8-0D3C-4190-B90A-034FF8CFC27B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SharePointProject1VSeida</RootNamespace>
+    <AssemblyName>SharePointProject1VSeida</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebParts\NewsBox\NewsBox.cs" />
+    <Compile Include="WebParts\NewsBox\NewsBoxUserControl.ascx.cs">
+      <DependentUpon>NewsBoxUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\NewsBox\NewsBoxUserControl.ascx.designer.cs">
+      <DependentUpon>NewsBoxUserControl.ascx.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Colums\DescriptionNews\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{31a0c0e4-445f-4a20-b0e9-3b5cb9d3374e}</SharePointProjectItemId>
+    </None>
+    <None Include="Colums\Visible\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{271e8434-ea81-4f3c-8944-19005b8ff004}</SharePointProjectItemId>
+    </None>
+    <None Include="Colums\PersonAssigned\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d0a430cc-4745-41d2-9236-ff10177090fb}</SharePointProjectItemId>
+    </None>
+    <None Include="Colums\PublishingDate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9abbdfda-6af5-4284-aee6-bea67dd62029}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\NewsItem\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{42d71a9a-4e16-4426-b116-982099f49453}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature3\Feature3.feature">
+      <FeatureId>{6cc3d3d3-d0fc-4c58-9bdc-c8ae46e88320}</FeatureId>
+    </None>
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{194d2bb3-409a-4933-a895-ce176b48d325}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{78c2e2f6-fa8e-4225-985b-60c375a79afe}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\News\NewsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{971f5854-a825-4388-b04e-b4576d67b156}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\News\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2d4b7bf1-9070-42a0-a935-5f6da4535979}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{2858e333-6313-417f-b4c0-2b80be0bc679}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="WebParts\NewsBox\NewsBox.webpart" />
+    <None Include="WebParts\NewsBox\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c7e2d5d8-bf6f-4579-abed-1c36c1f7841f}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Colums\DescriptionNews\Elements.xml" />
+    <Content Include="Colums\Visible\Elements.xml" />
+    <Content Include="Colums\PersonAssigned\Elements.xml" />
+    <Content Include="Colums\PublishingDate\Elements.xml" />
+    <Content Include="ContentTypes\NewsItem\Elements.xml" />
+    <Content Include="Features\Feature3\Feature3.Template.xml">
+      <DependentUpon>Feature3.feature</DependentUpon>
+    </Content>
+    <Content Include="Images\SharePointProject1VSeida\news3.png" />
+    <Content Include="Images\SharePointProject1VSeida\newsIcon.png" />
+    <Content Include="Lists\News\Elements.xml" />
+    <Content Include="Lists\News\NewsInstance\Elements.xml" />
+    <Content Include="Lists\News\Schema.xml" />
+    <Content Include="Layouts\SharePointProject1VSeida\Style.css" />
+    <Content Include="WebParts\NewsBox\Elements.xml" />
+    <Content Include="WebParts\NewsBox\NewsBoxUserControl.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Modules\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

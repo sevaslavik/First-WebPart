@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="Seida-News block" Description="Add news on your page from your list &quot;News&quot;." Id="a6a2f046-59b5-4734-8d2f-eed6e249737e" ImageUrl="../Images/SharePointProject1VSeida/news3.png" Scope="Site">
+  <ElementManifests>
+    <ElementManifest Location="DescriptionNews\Elements.xml" />
+    <ElementManifest Location="PersonAssigned\Elements.xml" />
+    <ElementManifest Location="PublishingDate\Elements.xml" />
+    <ElementManifest Location="Visible\Elements.xml" />
+    <ElementManifest Location="NewsItem\Elements.xml" />
+    <ElementManifest Location="NewsInstance\Elements.xml" />
+    <ElementManifest Location="News\Elements.xml" />
+    <ElementFile Location="News\Schema.xml" />
+    <ElementManifest Location="NewsBox\Elements.xml" />
+    <ElementFile Location="NewsBox\NewsBox.webpart" />
+  </ElementManifests>
+</Feature>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="2858e333-6313-417f-b4c0-2b80be0bc679" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="SharePointProject1VSeida.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="SharePointProject1VSeida, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1775c281c07d380f" Namespace="SharePointProject1VSeida.WebParts.NewsBox" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\SharePointProject1VSeida.WebParts\NewsBox\NewsBoxUserControl.ascx" />
+    <TemplateFile Location="Images\SharePointProject1VSeida\news3.png" />
+    <TemplateFile Location="Images\SharePointProject1VSeida\newsIcon.png" />
+    <TemplateFile Location="Layouts\SharePointProject1VSeida\Style.css" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="SharePointProject1VSeida_Feature3\Feature.xml" />
+  </FeatureManifests>
+</Solution>
